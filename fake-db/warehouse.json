@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "abdi",
+      "email": "abdi@mail.com",
+      "password": "password",
+      "hp": "082211223344",
+      "status":"verified",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "edo",
+      "email": "edo@mail.com",
+      "password": "password",
+      "hp": "082222335566",
+      "status":"unverified",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "chiko",
+      "email": "chiko@mail.com",
+      "password": "password",
+      "hp": "082299883344",
+      "status":"unverified",
+      "role": "user"
+    },
+    {
+      "username": "ando",
+      "email": "ando@gmail.com",
+      "password": "123456",
+      "hp": "085297647359",
+      "role": "user",
+      "status":"unverified",
+      "id": 4
+    },
+    {
+      "username": "dodo",
+      "email": "maylando_sihombing@yahoo.com",
+      "password": "123456",
+      "hp": "08116784888",
+      "role": "user",
+      "status":"unverified",
+      "id": 5
+    },
+    {
+      "username": "Merci",
+      "email": "Mercibarn@gmail.com",
+      "password": "123456",
+      "hp": "082213797364",
+      "status": "unverified",
+      "role": "user",
+      "id": 6
+    }
+  ]
+}
