@@ -18,6 +18,7 @@ import { loginAction, keepLogin } from './actions';
 import { connect } from 'react-redux';
 import VerificationPage from './pages/VerificationPage';
 import ForgotPage from './pages/ForgotPage';
+import ResetPage from './pages/ResetPage';
 
 
 class App extends React.Component {
@@ -47,7 +48,8 @@ class App extends React.Component {
           <Route path="/products" component={ProductPage} />
           <Route path="/signup" component={SignUpPage} />
           <Route path="/signin" component={SignInPage} />
-          <Route path="/forgot" component={ForgotPage} />
+          <Route path="/forgot-password" component={ForgotPage} />
+          <Route path="/reset-password" component={ResetPage} />
           <Route path="/verification" component={VerificationPage} />
           {
             this.props.user_role == "Admin" ?
