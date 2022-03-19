@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container } from 'reactstrap';
+import CarousleHome from '../components/Carousle';
 
 class LandingPage extends React.Component {
     constructor(props) {
@@ -8,7 +10,9 @@ class LandingPage extends React.Component {
     render() {
         return (
             <div>
-              <h3>LandingPage</h3>
+                <Container className="pt-4">
+                    <CarousleHome />
+                </Container>
             </div>
         );
     }

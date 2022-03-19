@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class TransactionAdmin extends React.Component {
+class DataUser extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -9,10 +9,10 @@ class TransactionAdmin extends React.Component {
     render() { 
         return ( 
             <div>
-                <h3>Transaction Admin</h3>
+                <h3>Data User</h3>
             </div>
          );
     }
 }
  
-export default TransactionAdmin;
+export default DataUser;
