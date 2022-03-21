@@ -1,4 +1,4 @@
-const getCurrentDate = () => {
+function getCurrentDate () {
     let separator = '-';
     let newDate = new Date();
     let date = newDate.getDate();
