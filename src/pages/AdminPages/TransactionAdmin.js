@@ -131,7 +131,7 @@ class TransactionAdmin extends React.Component {
 const mapToProps = (state) => {
     return {
         user_id: state.userReducer.id,
-        user_role: state.userReducer.user_role
+        role: state.userReducer.role
     }
 }
 

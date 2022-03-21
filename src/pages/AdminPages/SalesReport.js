@@ -18,7 +18,7 @@ const SalesReport = () => {
     });
 
     const fetchSales = () => {
-        Axios.get(`${API_URL}/admin`)
+        Axios.get(`${API_URL}/transactions/sales`)
             .then((res) => {
                 if (res.data.length) {
                     setSalesFetch({ ...salesFetch, salesDataList: res.data });
@@ -30,7 +30,7 @@ const SalesReport = () => {
     };
 
     const fetchRevenue = () => {
-        Axios.get(`${API_URL}/admin/revenue`)
+        Axios.get(`${API_URL}/transactions/revenue`)
             .then((res) => {
                 if (res.data.length) {
                     setRevenueFetch({ ...revenueFetch, revenueData: res.data[0] });
@@ -73,19 +73,18 @@ const SalesReport = () => {
         fetchRevenue();
     }, []);
 
-
     return (
         <div className="container p-5r">
-            <div className="col-12 text-center">
-                <h1>Sales Report</h1>
+            <div className="col-12 text-center mt-3">
+                <h3>Sales Report</h3>
                 <div className="row">
-                    <table className="table mt-6">
+                    <table className="table mt-3">
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>nama_produk</th>
+                                <th>Nama Produk</th>
                                 <th>Qty</th>
-                                <th>harga_jual</th>
+                                <th>Harga Jual</th>
                             </tr>
                         </thead>
                         <tbody>
